@@ -6,4 +6,4 @@ Here I will post updates to the projects I'm working on.
 
 Here is my latest project: a recreation of the legendary Music DJ app found on old Sony Ericsson phones.
 
-![Image of MusicDJ](https://i.imgur.com/Osj7ef5.png)
+![Image of MusicDJ](https://i.imgur.com/aUPec4l.png)
