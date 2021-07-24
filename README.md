@@ -1,6 +1,6 @@
 ## Welcome to PattleBass's GitHub Page
 
-Here I will post updates to the projects I'm working on.
+Here I will post updates on the projects I'm working on.
 
 ## [MusicDJ](https://pattlebass.github.io/Music-DJ/)
 
