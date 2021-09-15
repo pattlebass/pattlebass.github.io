@@ -1,3 +1,5 @@
+# Pattlebass' Homepage
+
 ## [MusicDJ](https://pattlebass.github.io/Music-DJ/)
 
 Here is my latest app: a recreation of the legendary Music DJ app found on old Sony Ericsson phones.
