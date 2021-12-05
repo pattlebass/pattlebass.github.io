@@ -1,0 +1,126 @@
+body {
+	font-family: "Roboto Mono";
+	font-size: 24px;
+	background-color: black;
+	color: white;
+}
+
+.hcenter {
+	margin: auto;
+	max-width: 1000px;
+	min-width: 400px;
+	text-align: center;
+}
+
+.item {
+	display: grid;
+	flex: 1 1 0px;
+	padding: 10px;
+	margin: 20px;
+
+	transition: all 0.2s;
+}
+
+.item:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.item-title {
+	margin: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: white;
+	pointer-events: none;
+}
+
+.item-container {
+	position: relative;
+}
+
+.item-img {
+	transition: all 0.2s;
+
+	width: 100%;
+	height: auto;
+	opacity: 0.55;
+
+	/*
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);*/
+}
+
+/*.item-img:hover {
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+}*/
+
+.social-media {
+	font-size: 50px;
+	color: white;
+	margin: 15px;
+
+	transition: all 0.2s;
+}
+
+.twitter:hover {
+	color: #55acee;
+}
+
+.github:hover {
+	color: gray;
+}
+
+/* For PCs */
+.container {
+	display: flex;
+}
+
+/* For tablets */
+@media only screen and (max-width: 800px) {
+	.container {
+		display: block;
+	}
+	.item {
+		width: 100%;
+		display: flex;
+		padding: 10px;
+	}
+	/*.item-img {
+		width: 70%;
+	}*/
+	.item-p {
+		text-align: left;
+		width: 150%;
+		margin-left: 20px;
+	}
+}
+
+/* For phones */
+@media only screen and (max-width: 600px) {
+	.item {
+		display: block;
+	}
+	.item-p {
+		display: contents;
+	}
+	.item-img {
+		width: 70%;
+	}
+}
+
+/* For 4k displays */
+@media only screen and (min-width: 2000px) {
+	body {
+		font-size: 28px;
+	}
+	.hcenter {
+		max-width: 1500px;
+	}
+}
