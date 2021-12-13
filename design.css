@@ -91,13 +91,16 @@ h3.date {
 	padding: 15px;
 }
 
+a {
+	color: #ffffffd9;
+}
+
 a:link {
 	text-decoration: none;
 }
 
 a:visited.header {
 	text-decoration: none;
-	color: #ffffffd9;
 }
 
 a:hover {
