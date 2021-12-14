@@ -7,17 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="utf-8" />
 
-		<!-- CSS and FontAwesome -->
+		<!-- CSS and Fonts -->
 		<link rel="stylesheet" href="../design.css" />
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto Mono"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/5164994ec3.js"
-			crossorigin="anonymous"
-		></script>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+		</style>
 
 		<link rel="stylesheet" href="../highlight/styles/custom.css" />
 		<script src="../highlight/highlight.min.js"></script>
@@ -54,11 +49,16 @@
 					velit. Aenean varius consequat iaculis. Fusce ultrices sapien id dolor
 					iaculis rhoncus.
 				</p>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"
-					alt="Template image"
-					loading="lazy"
-				/>
+				<a
+					href="https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"
+					target="_blank"
+				>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"
+						alt="Template image"
+						loading="lazy"
+					/>
+				</a>
 				<br />
 				<h2>Second paragraph</h2>
 				<p>
@@ -72,11 +72,12 @@
 					Morbi eget elit eu tellus tincidunt pulvinar. Maecenas varius diam non
 					ex laoreet fringilla. Vivamus sollicitudin, libero a maximus
 					fringilla, nibh est efficitur dui, ultrices dapibus justo mi sed
-					velit. Aenean varius consequat iaculis. Fusce ultrices sapien id dolor
-					iaculis rhoncus.
+					velit. <code>print("test")</code> Varius consequat iaculis. Fusce
+					ultrices sapien id dolor iaculis rhoncus.
 				</p>
 				<br />
-				<pre><code class="language-gdscript">x = 5;
+				<pre><code class="language-gdscript"># Player.gd
+x = 5;
 y = 6;
 z = x + y;
 var sum = z + y + z # The sum of the three numbers
@@ -84,7 +85,8 @@ var sum = z + y + z # The sum of the three numbers
 if x > y:
     print("x is greater than y")
 else:
-    print(z)</code></pre>
+    print(z)
+</code></pre>
 				<blockquote>
 					Sed commodo vulputate tempus. Aenean ullamcorper bibendum leo, a
 					blandit enim viverra lobortis. Morbi eget elit eu tellus tincidunt

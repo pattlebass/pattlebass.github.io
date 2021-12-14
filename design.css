@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
-	font-family: "Roboto Mono";
-	font-size: 1.5rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.7rem;
 	background-color: #121212;
 	color: #ffffffd9;
 	padding: 20px 15px 30px 15px;
 }
 
+::selection {
+	background-color: #52bdff70; /*rgba(255, 255, 255, 0.17);*/
+	color: white;
+}
+
 .hcenter {
 	margin: auto;
 	max-width: 1000px;
-	min-width: 400px;
 	text-align: center;
 }
 
@@ -53,13 +59,15 @@ h2.subtitle {
 
 h3.date {
 	text-align: right;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-style: italic;
 }
 
 .blog img {
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .blog pre {
@@ -85,10 +93,10 @@ h3.date {
 	font-size: 1rem;
 }
 
-.code {
+code {
 	background-color: #ffffff0d;
 	border-radius: 7px;
-	padding: 15px;
+	padding: 3px;
 }
 
 a {
