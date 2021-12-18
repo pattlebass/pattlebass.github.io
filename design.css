@@ -195,7 +195,6 @@ a:active {
 		display: block;
 	}
 	.item {
-		width: 100%;
 		display: flex;
 		padding: 10px;
 		margin: auto;
@@ -220,7 +219,7 @@ a:active {
 		display: contents;
 	}
 	.item-img {
-		width: 70%;
+		width: 100%;
 	}
 }
 
