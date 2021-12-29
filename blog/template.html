@@ -21,12 +21,34 @@
 			hljs.highlightAll();
 		</script>
 	</head>
+
+	<script>
+		function w3IncludeHTML() {
+			var z, i, a, file, xhttp;
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				if (z[i].getAttribute("w3-include-html")) {
+					a = z[i].cloneNode(false);
+					file = z[i].getAttribute("w3-include-html");
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (xhttp.readyState == 4 && xhttp.status == 200) {
+							a.removeAttribute("w3-include-html");
+							a.innerHTML = xhttp.responseText;
+
+							z[i].parentNode.replaceChild(a, z[i]);
+							w3IncludeHTML();
+						}
+					};
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					return;
+				}
+			}
+		}
+	</script>
+
 	<body>
-		<!--#include virtual="../quote.txt" -->
-		<header>
-			<a href="../index.html" class="header logo">pattle_bass</a>
-			<a href="../index.html" class="header">Home</a>
-		</header>
 		<main class="hcenter">
 			<article class="blog">
 				<h1 class="title">This blog is a template</h1>
@@ -95,6 +117,12 @@ else:
 					<cite>Important Person, 1987</cite>
 				</blockquote>
 			</article>
+
+			<div w3-include-html="../header.html"></div>
 		</main>
+
+		<script>
+			w3IncludeHTML();
+		</script>
 	</body>
 </html>
