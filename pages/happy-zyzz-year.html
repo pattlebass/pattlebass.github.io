@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>pattle_bass</title>
+
+		<!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+
+		<!-- CSS and FontAwesome -->
+		<link rel="stylesheet" href="/design.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto Mono"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<button onclick="showAll()" id="button">Apasa aici</button>
+		<h1 id="demo" class="this-title screen-mid"></h1>
+		<div class="screen-mid">
+			<video width="320" height="240" id="video" style="display: none">
+				<source
+					src="/videos/F.U.A.R.K.S.T.Y.L.E Zyzz Glimmer of hope Hardstyle.mp4"
+					type="video/mp4"
+				/>
+				Your browser does not support the video tag.
+			</video>
+		</div>
+
+		<script>
+			// Set the date we're counting down to
+			//var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+			var countDownDate = new Date("Dec 31, 2021 23:42:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function () {
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor(
+					(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+				);
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in the element with id="demo"
+				document.getElementById("demo").innerHTML =
+					hours + "h " + minutes + "m " + seconds + "s ";
+
+				// If the count down is finished, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "LMA 2022";
+					document.getElementById("demo").style = "display: none";
+					document.getElementById("video").style = "display: inline";
+				}
+				if (distance < 25 * 1000) {
+					document.getElementById("video").play();
+				}
+			}, 1000);
+
+			function showAll() {
+				document.getElementById("button").style = "display: none;";
+				console.log("Pressed");
+				//document.getElementById("cont").style = "display: block;";
+			}
+		</script>
+
+		<style>
+			body {
+				/*zoom: 500%;*/
+				padding: 0;
+				background-color: black;
+			}
+			.screen-mid {
+				height: 100%;
+				width: 100%;
+				display: flex;
+				position: fixed;
+				align-items: center;
+				justify-content: center;
+			}
+			.this-title {
+				font-size: 6rem;
+				color: white;
+				margin: 0;
+			}
+			/*@media only screen and (max-width: 500px) {
+				body {
+					zoom: 400%;
+				}
+			}
+			@media only screen and (max-width: 400px) {
+				body {
+					zoom: 300%;
+				}
+			}*/
+		</style>
+	</body>
+</html>
