@@ -130,6 +130,7 @@ a:active {
 	flex: 1 1 0px;
 	padding: 10px;
 	margin: 20px;
+	max-width: 25%;
 
 	transition: all 0.2s;
 }
@@ -205,6 +206,7 @@ a:active {
 		display: flex;
 		padding: 10px;
 		margin: auto;
+		max-width: 100%;
 	}
 	/*.item-img {
 		width: 70%;
@@ -221,6 +223,7 @@ a:active {
 	.item {
 		display: block;
 		margin: auto;
+		max-width: 100%;
 	}
 	.item-p {
 		display: contents;
