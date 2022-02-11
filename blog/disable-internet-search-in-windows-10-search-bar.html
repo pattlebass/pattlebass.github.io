@@ -32,20 +32,21 @@
 				</h1>
 				<h2 class="subtitle">Windows 10 1809 and up</h2>
 				<h3 class="date">
-					Written on <time datetime="2021-12-12">December 12th, 2021</time>
+					Written on <time datetime="2022-02-11">February 11th, 2022</time>
 				</h3>
 				<br />
 				<h2>Open regedit</h2>
 				<p>
-					Press Windows + R and then type <code>regedit</code> and hit enter.
-					Accept the UAC prompt that shows up.
+					Press Windows + R, type <code>regedit</code> and hit enter. Accept the
+					UAC prompt that shows up.
 					<br />
 					Navigate to
 					<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.
-					If there is no key named Explorer create right-click and create one.
-					Then select it and on the right create a new DWORD value (right-click
-					> New > DWORD (32 bit) value) and name it
-					<code>DisableSearchBoxSuggestions</code>.
+				</p>
+				<h2>Create the keys</h2>
+				<p>
+					If there is no key named <code>Explorer</code> right-click and create
+					one.
 				</p>
 				<a
 					href="images/disable-internet-results-search-bar-1.png"
@@ -58,14 +59,13 @@
 					/>
 				</a>
 				<br />
-				<h2>Create the keys</h2>
 				<p>
-					If there is no key named Explorer right-click and create one. Then
-					select it and on the right add a new
+					Select it and on the right add a new
 					<code>DWORD value</code> (right-click > New) and name it
 					<code>DisableSearchBoxSuggestions</code>. Double-click it and set its
 					value data to 1.
 				</p>
+
 				<a
 					href="images/disable-internet-results-search-bar-2.png"
 					target="_blank"
