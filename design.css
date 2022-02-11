@@ -99,9 +99,10 @@ h3.date {
 }
 
 code {
-	background-color: #ffffff0d;
+	background-color: #ffffff1f;
 	border-radius: 7px;
-	padding: 3px;
+	/*padding: 3px;*/
+	padding: 0 0.3rem 0 0.3rem;
 	font-size: 1.3rem;
 }
 

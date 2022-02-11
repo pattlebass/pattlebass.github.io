@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>How to disable web search results in the start menu</title>
+
+		<!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+
+		<!-- CSS, Fonts and Scripts -->
+		<link rel="stylesheet" href="/design.css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+		</style>
+
+		<link rel="stylesheet" href="/highlight/styles/custom.css" />
+		<script src="/highlight/highlight.min.js"></script>
+		<script src="/highlight/languages/gdscript.min.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+		<script src="/include_script.js"></script>
+	</head>
+
+	<body>
+		<header w3-include-html="/header.html"></header>
+		<main class="hcenter">
+			<article class="blog">
+				<h1 class="title">
+					How to disable web search results in the start menu
+				</h1>
+				<h2 class="subtitle">Windows 10 1809 and up</h2>
+				<h3 class="date">
+					Written on <time datetime="2021-12-12">December 12th, 2021</time>
+				</h3>
+				<br />
+				<h2>Open regedit</h2>
+				<p>
+					Press Windows + R and then type <code>regedit</code> and hit enter.
+					Accept the UAC prompt that shows up.
+					<br />
+					Navigate to
+					<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.
+					If there is no key named Explorer create right-click and create one.
+					Then select it and on the right create a new DWORD value (right-click
+					> New > DWORD (32 bit) value) and name it
+					<code>DisableSearchBoxSuggestions</code>.
+				</p>
+				<a
+					href="images/disable-internet-results-search-bar-1.png"
+					target="_blank"
+				>
+					<img
+						src="images/disable-internet-results-search-bar-1.png"
+						alt="Template image"
+						loading="lazy"
+					/>
+				</a>
+				<br />
+				<h2>Create the keys</h2>
+				<p>
+					If there is no key named Explorer right-click and create one. Then
+					select it and on the right add a new
+					<code>DWORD value</code> (right-click > New) and name it
+					<code>DisableSearchBoxSuggestions</code>. Double-click it and set its
+					value data to 1.
+				</p>
+				<a
+					href="images/disable-internet-results-search-bar-2.png"
+					target="_blank"
+				>
+					<img
+						src="images/disable-internet-results-search-bar-2.png"
+						alt="Template image"
+						loading="lazy"
+					/>
+				</a>
+				<br />
+				<h2>You're done!</h2>
+				<p>Now all you have to do is restart Explorer.exe .</p>
+			</article>
+		</main>
+		<script>
+			w3IncludeHTML();
+		</script>
+	</body>
+</html>
