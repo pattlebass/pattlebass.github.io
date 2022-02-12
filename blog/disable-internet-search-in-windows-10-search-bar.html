@@ -35,50 +35,52 @@
 					Written on <time datetime="2022-02-11">February 11th, 2022</time>
 				</h3>
 				<br />
-				<h2>Open regedit</h2>
-				<p>
-					Press Windows + R, type <code>regedit</code> and hit enter. Accept the
-					UAC prompt that shows up.
-					<br />
-					Navigate to
-					<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.
-				</p>
-				<h2>Create the keys</h2>
-				<p>
-					If there is no key named <code>Explorer</code> right-click and create
-					one.
-				</p>
-				<a
-					href="images/disable-internet-results-search-bar-1.png"
-					target="_blank"
-				>
-					<img
-						src="images/disable-internet-results-search-bar-1.png"
-						alt="Template image"
-						loading="lazy"
-					/>
-				</a>
-				<br />
-				<p>
-					Select it and on the right add a new
-					<code>DWORD value</code> (right-click > New) and name it
-					<code>DisableSearchBoxSuggestions</code>. Double-click it and set its
-					value data to 1.
-				</p>
+				<ol>
+					<li>
+						Windows + R, type <code>regedit</code> and hit enter. Accept the UAC
+						prompt that shows up.
+					</li>
+					<li>
+						Navigate to
+						<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.
+					</li>
+					<li>
+						If there is no key named <code>Explorer</code> right-click and
+						create one.
+					</li>
 
-				<a
-					href="images/disable-internet-results-search-bar-2.png"
-					target="_blank"
-				>
-					<img
-						src="images/disable-internet-results-search-bar-2.png"
-						alt="Template image"
-						loading="lazy"
-					/>
-				</a>
-				<br />
-				<h2>You're done!</h2>
-				<p>Now all you have to do is restart Explorer.exe .</p>
+					<br />
+					<a
+						href="images/disable-internet-results-search-bar-1.png"
+						target="_blank"
+					>
+						<img
+							src="images/disable-internet-results-search-bar-1.png"
+							alt="Template image"
+							loading="lazy"
+							width="620px"
+						/>
+					</a>
+					<br />
+					<li>
+						Select it and on the right add a new
+						<code>DWORD value</code> (right-click > New) and name it
+						<code>DisableSearchBoxSuggestions</code>.
+					</li>
+					<li>Double-click it and set its value data to 1.</li>
+					<br />
+					<a
+						href="images/disable-internet-results-search-bar-2.png"
+						target="_blank"
+					>
+						<img
+							src="images/disable-internet-results-search-bar-2.png"
+							alt="Template image"
+							loading="lazy"
+						/>
+					</a>
+					<li>Restart Explorer.exe</li>
+				</ol>
 			</article>
 		</main>
 		<script>
