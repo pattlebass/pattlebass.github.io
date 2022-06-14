@@ -72,7 +72,7 @@
         {% for project in site.projects %}
           {% if project.show_in_home %}
             <div class="item">
-              <a href="{{ project.url }}">
+              <a href="{{ project.redirect | default: project.url }}">
                 <img src="{{ project.image }}" alt="Image for {{ project.title }}" />
                 <div class="overlay"></div>
                 <h1>{{ project.title }}</h1>

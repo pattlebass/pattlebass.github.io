@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Godot Acrylic
 description: An effect similar to Microsoft's Acrylic material achieved in the Godot Engine.
 github: https://github.com/pattlebass/Godot-Acrylic

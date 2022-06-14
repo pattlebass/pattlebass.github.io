@@ -15,7 +15,7 @@ custom_colors:
 {{ page.description }}
 
 
-![MusicDJ image](https://pattlebass.github.io/images/musicdj.webp){:height="600px"}
+![MusicDJ image](/assets/images/musicdj.webp){:height="600px"}
 
 ## Features
 * Create songs using the original samples
