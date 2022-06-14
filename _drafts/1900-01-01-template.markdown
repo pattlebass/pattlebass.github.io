@@ -1,0 +1,29 @@
+---
+layout: post
+title: This blog is a template
+---
+
+# First paragraph
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan, sapien sed pharetra vulputate, magna felis facilisis diam, id cursus nibh nisl ut justo. Vivamus fringilla mauris tellus, sed sodales arcu vehicula at. Sed condimentum sollicitudin vulputate. Proin tristique massa ut massa interdum consequat. In a est mi. Fusce vehicula velit eget accumsan tincidunt. Sed commodo vulputate tempus. Aenean ullamcorper bibendum leo, a blandit enim viverra lobortis. Morbi eget elit eu tellus tincidunt pulvinar. Maecenas varius diam non ex laoreet fringilla. Vivamus sollicitudin, libero a maximus fringilla, nibh est efficitur dui, ultrices dapibus justo mi sed velit. Aenean varius consequat iaculis. Fusce ultrices sapien id dolor iaculis rhoncus.
+
+![alt](https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg){:height="300px"}
+
+# Second paragraph
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan, sapien sed pharetra vulputate, magna felis facilisis diam, id cursus nibh nisl ut justo. Vivamus fringilla mauris tellus, sed sodales arcu vehicula at. Sed condimentum sollicitudin vulputate. Proin tristique massa ut massa interdum consequat. In a est mi. Fusce vehicula velit eget accumsan tincidunt. Sed commodo vulputate tempus. Aenean ullamcorper bibendum leo, a blandit enim viverra lobortis. Morbi eget elit eu tellus tincidunt pulvinar. Maecenas varius diam non ex laoreet fringilla. Vivamus sollicitudin, libero a maximus fringilla, nibh est efficitur dui, ultrices dapibus justo mi sed velit. `print("test")` Varius consequat iaculis. Fusce ultrices sapien id dolor iaculis rhoncus.
+
+```gd
+# Player.gd
+x = 5
+y = 6
+z = x + y
+var sum = z + y + z # The sum of the three numbers
+
+if x > y:
+    print("x is greater than y")
+else:
+    print(z)
+```
+
+> Sed commodo vulputate tempus. Aenean ullamcorper bibendum leo, a blandit enim viverra lobortis. Morbi eget elit eu tellus tincidunt pulvinar.

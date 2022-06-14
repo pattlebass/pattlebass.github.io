@@ -1,0 +1,88 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<style>
+	.projects-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
+	}
+
+	.project-category {
+		margin-bottom: 32px;
+	}
+
+	.item a {
+		position: relative;
+		color: var(--text-color);
+	}
+
+	.item h1 {
+        font-size: 32px;
+		position: absolute;
+		bottom: 6px;
+		left: 12px;
+		margin: 0;
+		text-shadow: 2px 2px 0 black;
+        pointer-events: none;
+	}
+
+	.item img {
+		aspect-ratio: 15/9;
+		width: 100%;
+		height: auto;
+	}
+
+	.item .overlay {
+		background: linear-gradient(to top, #000000ba, #ffffff00);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		transition: 0.2s ease;
+		border-radius: 8px;
+	}
+
+	.item .overlay:hover {
+		opacity: 0;
+	}
+</style>
+
+<div class="pinned-projects project-category">
+	<h1>Pinned</h1>
+	<div class="projects-container">
+		{% for project in site.projects %} {% if project.pinned %}
+		<div class="item">
+			<a href="{{ project.redirect | default: project.url }}">
+				<img src="{{ project.image }}" alt="Image for {{ project.title }}" />
+				<div class="overlay"></div>
+				<h1>{{ project.title }}</h1>
+			</a>
+			<p>{{ project.description }}</p>
+		</div>
+		{% endif %} {% endfor %}
+	</div>
+</div>
+<div class="other-projects project-category">
+	<h1>Other</h1>
+	<div class="projects-container">
+		{% for project in site.projects %} {% unless project.pinned %}
+		<div class="item">
+			<a href="{{ project.url }}">
+				<img src="{{ project.image }}" alt="Image for {{ project.title }}" />
+				<div class="overlay"></div>
+				<h1>{{ project.title }}</h1>
+			</a>
+			<p>{{ project.description }}</p>
+		</div>
+		{% endunless %} {% endfor %}
+	</div>
+</div>

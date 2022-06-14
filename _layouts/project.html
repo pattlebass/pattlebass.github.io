@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+	{%- include head.html -%}
+	<link rel="stylesheet" href="/assets/css/project.css">
+	{% if page.custom_colors %}
+		<style>
+			:root {
+				--main-color: {{ page.custom_colors.main }};
+				--secondary-color: {{ page.custom_colors.secondary }};
+				--text-color: {{ page.custom_colors.text }};
+			}
+		</style>
+	{% endif %}
+	{%- include header.html -%}
+	
+	<body>
+		<main>
+			<article>
+				<h1 class="title">{{ page.title }}</h1>
+				<div class="github-container">
+					<a href="{{ page.github }}" class="github-button"
+						>View on Github
+						<svg
+							class="svg-icon"
+							viewBox="0 0 16 16"
+							alignment-baseline="text-before-edge"
+						>
+							<use
+								xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
+							></use>
+						</svg>
+					</a>
+				</div>
+				{{content}}
+			</article>
+		</main>
+		{%- include footer.html -%}
+	</body>
+</html>
