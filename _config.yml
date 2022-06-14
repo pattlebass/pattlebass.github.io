@@ -41,7 +41,7 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "projects"
     values:
-      image: https://pattlebass.github.io/images/animtxt-maker.webp
+      image: /assets/images/animtxt-maker.webp
 
 collections:
   projects:

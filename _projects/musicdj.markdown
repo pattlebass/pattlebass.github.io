@@ -2,7 +2,7 @@
 layout: project
 title: MusicDJ
 description: A recreation of the legendary Music DJ app found on old Sony Ericsson phones
-image: https://pattlebass.github.io/images/musicdj.webp
+image: /assets/images/musicdj.webp
 github: https://github.com/pattlebass/Music-DJ
 pinned: true
 show_in_home: true
