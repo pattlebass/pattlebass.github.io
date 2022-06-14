@@ -15,7 +15,7 @@ custom_colors:
 {{ page.description }}
 
 
-![MusicDJ image](/assets/images/musicdj.webp){:height="600px"}
+![MusicDJ image](/assets/images/musicdj.webp){:width="1000px" height="600px"}
 
 ## Features
 * Create songs using the original samples
