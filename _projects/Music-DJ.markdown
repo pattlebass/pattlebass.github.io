@@ -2,6 +2,7 @@
 layout: project
 title: MusicDJ
 description: A recreation of the legendary Music DJ app found on old Sony Ericsson phones
+permalink: /Music-DJ/
 image: /assets/images/musicdj.webp
 github: https://github.com/pattlebass/Music-DJ
 pinned: true
@@ -14,32 +15,35 @@ custom_colors:
 
 {{ page.description }}
 
-
 ![MusicDJ image](/assets/images/musicdj.webp){:width="1000px" height="600px"}
 
 ## Features
-* Create songs using the original samples
-* You can export the songs to the `.wav` format
-* You can save the project you're working on for later
-* Both a Dark and a White theme are available, more in the future
+
+- Create songs using the original samples
+- You can export the songs to the .wav format
+- You can save the project you're working on for later
+- Both a Dark and a White theme are available, more in the future
 
 ## To be added
-* Higher quality samples
-* MIDI player
-* Tempo changer
+
+- Higher quality samples
+- MIDI player
+- Tempo changer
 
 ## Download
 
-* [Android (64bit)](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ_64bit.apk) - Recommended 
-* [Android (32bit)](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ_32bit.apk)
-* [Windows](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ.Windows.zip)
-* [Linux](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ.Linux.zip) (You may have to give it executable permissions)
-* [HTML5 (Browser)](https://pattlebass.itch.io/musicdj) (Can be buggy on mobile devices)
+- [Android (64bit)](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ_64bit.apk) - Recommended
+- [Android (32bit)](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ_32bit.apk)
+- [Windows](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ.Windows.zip)
+- [Linux](https://github.com/pattlebass/Music-Dj/releases/latest/download/MusicDJ.Linux.zip) (You may have to give it executable permissions)
+- [HTML5 (Browser)](https://pattlebass.itch.io/musicdj) (Can be buggy on mobile devices)
 
 You might get warnings about this app not being safe. Like [this](https://i.stack.imgur.com/LlLiX.png) and [this](https://i.imgur.com/VlnKgTB.png). That's because I'm not a verified publisher and there is nothing I can do at the moment.
 
 On Android, you'll need to allow apps from unknown sources. If you don't know how to do that, search a tutorial for your specific Android version.
 
+## Contributing
+See [contributing.md](https://github.com/pattlebass/Music-DJ/blob/main/CONTRIBUTING.md) for instructions.
 
 ## Donate
 If you appreciate the work that has been put into making this app, consider donating.
