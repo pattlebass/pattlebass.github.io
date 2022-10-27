@@ -91,7 +91,7 @@ h6 {
 
 blockquote {
 	border-left: 0.5em solid white;
-	padding-left: 1em;
+	padding-left: 8px;
 	margin-left: 0;
 	font-size: 1.1em;
 }
@@ -121,37 +121,53 @@ header {
 	padding: 10px 16px;
 }
 .logo {
+	color: var(--text-color);
 	font-size: 2rem;
 	float: left;
 }
-.logo:visited {
+.logo:link, .logo:visited {
 	color: var(--text-color);
 }
 .navbar {
-	float: right;
-	border: var(--main-color) 1px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.navbar a {
+.navbar-links {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navbar-links li {
+	list-style-type: none;
+}
+.navbar-links a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-}
-
-.navbar a:link {
 	color: var(--text-color);
 }
-
-.navbar a:visited {
-	color: var(--text-color);
-}
-
-.navbar a:hover,
-.navbar a.current-page {
+.navbar-links a:hover,
+.navbar-links a.current-page {
 	border-bottom: 3px solid var(--text-color);
 }
+.toggle-button {
+	position: absolute;
+	top: 0.8rem;
+	right: 1rem;
+	display: none;
 
-.navbar a:active {
-	color: var(--text-color);
+	background-color: transparent;
+	border-width: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+header .icon {
+	display: none;
 }
 
 footer {
@@ -193,8 +209,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-	.logo {
-		display: none;
+	header .icon {
+		display: block;
+		float: right;
 	}
 	
 	main {
@@ -207,5 +224,25 @@ footer {
 	footer, header {
 		background-color: var(--main-color);
 		box-shadow: none;
+	}
+
+	.toggle-button {
+		display: block;
+	}
+	.navbar-links {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links li {
+		text-align: center;
+		padding: 0.5rem;
+	}
+	.navbar-links.active {
+		display: flex;
 	}
 }

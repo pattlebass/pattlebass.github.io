@@ -1,19 +1,15 @@
-{%- assign default_paths = site.pages | map: "path" -%}
-{%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
-	<a href="{{ '/' | relative_url }}" class="logo">{{ site.title | escape }}</a>
-	<div class="navbar">
-		{%- for path in page_paths reversed -%}
-			{%- assign my_page = site.pages | where: "path", path | first -%}
-			{%- if my_page.title -%}
-				<a href="{{ my_page.url | relative_url }}"
-				{%- if my_page.url == page.url -%}
-					class = "page-link current-page"
-				{%- else -%}
-					class="page-link"
-				{%- endif -%}
-				>{{ my_page.title | escape }}</a>
-			{%- endif -%}
-		{%- endfor -%}
-	</div>
+	<nav class="navbar">
+		<a href="{{ '/' | relative_url }}" class="logo">{{ site.title | escape }}</a>
+		<button class="toggle-button" onclick="toggleNav()">
+			<svg class="svg-icon" viewBox="0 0 16 16">
+				<use xlink:href="{{ '/assets/icons.svg#hamburger' | relative_url }}"></use>
+			</svg>
+		</button>
+		<ul class="navbar-links">
+			{% for item in site.data.navbar %}
+				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
 </header>
