@@ -111,6 +111,19 @@ img {
 	border-radius: 8px;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-bottom: 2px solid var(--text-color);
+	color: var(--text-color);
+	text-align: left;
+  }
+  
+  table td, table th {
+	border-bottom: 2px solid var(--text-color);
+	padding: 5px;
+  }
+
 header {
 	background-color: var(--secondary-color);
 	box-shadow: 0px 1px 5px 0px #000000bf;
