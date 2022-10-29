@@ -33,11 +33,11 @@
       grid-column-gap: 32px;
     }
 
-    .item {
+    .showcase-item {
       transition: transform 0.2s;
     }
 
-    .item:hover {
+    .showcase-item:hover {
       transform: scale(1.05);
     }
 
@@ -49,13 +49,6 @@
       text-align: center;
       font-size: 1.7rem;
     }
-
-    .item img {
-      object-fit: cover;
-      aspect-ratio: 15/9;
-      width: 100%;
-      height: auto;
-  	}
 	</style>
 
 	<body>
@@ -69,7 +62,7 @@
       	<div class="projects-container">
         {% for project in site.projects %}
           {% if project.show_in_home %}
-            <div class="item">
+            <div class="showcase-item">
               <a href="{{ project.redirect | default: project.url }}">
                 <img src="{{ project.image }}" alt="Image for {{ project.title }}" />
                 <div class="overlay"></div>

@@ -28,7 +28,7 @@ body {
 	flex: 1;
 	margin: 0;
 	padding: 0;
-	line-height: 2em;
+	line-height: 1.5em;
 }
 
 main {
@@ -85,8 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 400;
-	margin-top: 0;
+	padding: 24px 0 0;
 }
 
 blockquote {
@@ -119,6 +118,7 @@ header {
 	top: 0;
 	z-index: 1;
 	padding: 10px 16px;
+	line-height: 2em;
 }
 .logo {
 	color: var(--text-color);
@@ -206,6 +206,47 @@ footer {
 
 .github:hover {
 	fill: gray;
+}
+
+.showcase-item a {
+	position: relative;
+	display: block;
+	color: var(--text-color);
+}
+
+.showcase-item h1 {
+	font-size: 32px;
+	position: absolute;
+	bottom: 6px;
+	left: 12px;
+	margin: 0;
+	text-shadow: 2px 2px 0 black;
+	pointer-events: none;
+}
+
+.showcase-item img {
+	object-fit: cover;
+	aspect-ratio: 15/9;
+	width: 100%;
+	height: auto;
+}
+
+.showcase-item .overlay {
+	background: linear-gradient(to top, #000000ba, #ffffff00);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: 0.2s ease;
+	border-radius: 8px;
+}
+
+.showcase-item .overlay:hover {
+	opacity: 0;
 }
 
 @media only screen and (max-width: 768px) {
