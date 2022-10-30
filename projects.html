@@ -17,33 +17,18 @@ permalink: /projects/
 	}
 </style>
 
-<div class="pinned-projects project-category">
-	<h1>Pinned</h1>
+<div class="project-category">
+	<h1>Projects</h1>
 	<div class="projects-container">
-		{% for project in site.projects %} {% if project.pinned %}
-		<div class="showcase-item">
-			<a href="{{ project.redirect | default: project.url }}">
-				<img src="{{ project.image }}" alt="Image for {{ project.title }}" />
-				<div class="overlay"></div>
-				<h1>{{ project.title }}</h1>
-			</a>
-			<p>{{ project.description }}</p>
-		</div>
-		{% endif %} {% endfor %}
-	</div>
-</div>
-<div class="other-projects project-category">
-	<h1>Other</h1>
-	<div class="projects-container">
-		{% for project in site.projects %} {% unless project.pinned %}
-		<div class="showcase-item">
-			<a href="{{ project.redirect | default: project.url }}">
-				<img src="{{ project.image }}" alt="Image for {{ project.title }}" />
-				<div class="overlay"></div>
-				<h1>{{ project.title }}</h1>
-			</a>
-			<p>{{ project.description }}</p>
-		</div>
-		{% endunless %} {% endfor %}
+		{% for project in site.data.projects %}
+			<div class="showcase-item">
+				<a href="{{ project.url }}">
+					<img src="{{ project.image }}" alt="" />
+					<div class="overlay"></div>
+					<h1>{{ project.title }}</h1>
+				</a>
+				<p>{{ project.description }}</p>
+			</div>
+		{% endfor %}
 	</div>
 </div>

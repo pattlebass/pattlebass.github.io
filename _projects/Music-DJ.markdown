@@ -5,8 +5,6 @@ description: A recreation of the legendary Music DJ app found on old Sony Ericss
 permalink: /Music-DJ/
 image: /assets/images/musicdj.webp
 github: https://github.com/pattlebass/Music-DJ
-pinned: true
-show_in_home: true
 custom_colors:
     main: "#232931"
     secondary: "#403c44"
@@ -15,7 +13,7 @@ custom_colors:
 
 {{ page.description }}
 
-![MusicDJ image](/assets/images/musicdj.webp){:width="1000px" height="600px"}
+![MusicDJ image](/assets/images/musicdj.webp){:width="1000px" height="530px"}
 
 ## Features
 * Create songs using the original samples

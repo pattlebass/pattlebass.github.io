@@ -61,11 +61,11 @@
 			<div class="social-links">{%- include social.html -%}</div>
 			<h2 class="home-subtitle">Stuff I made</h2>
       	<div class="projects-container">
-        {% for project in site.projects %}
+        {% for project in site.data.projects %}
           {% if project.show_in_home %}
             <div class="showcase-item">
-              <a href="{{ project.redirect | default: project.url }}">
-                <img src="{{ project.image }}" alt="Image for {{ project.title }}" />
+              <a href="{{ project.url }}">
+                <img src="{{ project.image }}" alt="" />
                 <div class="overlay"></div>
                 <h1>{{ project.title }}</h1>
               </a>

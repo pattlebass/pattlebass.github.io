@@ -1,0 +1,17 @@
+- title: MusicDJ
+  description: A recreation of the legendary Music DJ app found on old Sony Ericsson phones
+  url: /Music-DJ/
+  image: /assets/images/musicdj.webp
+  show_in_home: true
+
+- title: One At A Time
+  description: A Minecraft server-side mod that allows only a single person to play, while the rest spectate
+  url: https://github.com/pattlebass/OneAtATime
+  image: /assets/images/one-at-a-time.jpg
+  show_in_home: true
+
+- title: Godot Acrylic
+  description: An effect similar to Microsoft's Acrylic material achieved in the Godot Engine.
+  url: https://github.com/pattlebass/Godot-Acrylic
+  image: /assets/images/godot-acrylic.jpg
+  show_in_home: true
