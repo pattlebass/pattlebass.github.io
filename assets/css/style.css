@@ -1,8 +1,8 @@
 :root {
 	color-scheme: dark;
 	--main-color: #202326;
-	--secondary-color: #2e3236;
-	--text-color: #ffffffd9;
+	--secondary-color: rgb(37, 40, 43);
+	--text-color: rgba(255, 255, 255, 0.9);
 	/*--link: */
 }
 
@@ -28,15 +28,20 @@ body {
 	flex: 1;
 	margin: 0;
 	padding: 0;
-	line-height: 1.3;
+	line-height: 1.5;
 }
 
 main {
 	background-color: var(--secondary-color);
 	margin: 6rem auto;
 	padding: 32px;
-	max-width: 1000px;
+	max-width: 1100px;
 	border-radius: 16px;
+}
+
+article {
+	width: 70%;
+	margin: auto;
 }
 
 code.language-plaintext {
@@ -292,6 +297,10 @@ footer {
 		margin: 0;
 		padding-top: 64px;
 		flex: 1;
+	}
+
+	article {
+		width: 100%;
 	}
 
 	footer,
