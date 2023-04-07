@@ -3,6 +3,7 @@
 	--main-color: #202326;
 	--secondary-color: rgb(37, 40, 43);
 	--text-color: rgba(255, 255, 255, 0.9);
+	--text-color-faded: rgba(255, 255, 255, 0.5);
 	/*--link: */
 }
 
@@ -44,6 +45,27 @@ article {
 	margin: auto;
 }
 
+.article-info {
+	margin-bottom: 64px;
+}
+
+.article-metadata {
+	display: flex;
+	justify-content: end;
+}
+
+.meta-date {
+	color: var(--text-color-faded);
+	font-weight: 800;
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin: 32px 0 16px;
+	padding: 0;
+}
+
 code.language-plaintext {
 	word-break: break-word;
 	background: rgba(255, 255, 255, 0.05);
@@ -54,13 +76,6 @@ code.language-plaintext {
 	padding: 0 4px;
 	font-size: 16px;
 	color: #faa;
-}
-
-.title {
-	font-size: 48px;
-	text-align: center;
-	margin-bottom: 128px;
-	padding: 0;
 }
 
 /* unvisited link */
@@ -108,6 +123,22 @@ h4,
 h5,
 h6 {
 	margin-top: 48px;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
 }
 
 blockquote {
