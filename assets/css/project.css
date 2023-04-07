@@ -1,32 +1,20 @@
 .title {
-    margin: 16px;
+	margin: 16px;
 }
 
 .github-button {
-    display: inline-block;
-    padding: 8px;
-    fill: var(--text-color);
-    border-radius: 8px;
+	display: inline-block;
+	padding: 8px;
+	fill: var(--text-color);
+	border-radius: 8px;
 }
-.github-button:visited {
-    color: var(--text-color);
-    text-decoration: none;
-}
-.github-button:hover {
-    background-color: rgba(1, 1, 1, 0.1);
-    box-shadow: 0px 1px 5px 0px #000000bf;
-    text-decoration: none;
-}
-.github-button:active {
-    background-color: rgba(1, 1, 1, 0.1);
-    box-shadow: inset 0px 0px 5px 0px #000000bf;
-    text-decoration: none;
-}
+
 .github-button svg {
-    display: inline-block;
-    vertical-align: middle;
-    fill: inherit;
+	display: inline-block;
+	vertical-align: middle;
+	fill: inherit;
 }
+
 .github-container {
-    text-align: right;
+	text-align: right;
 }

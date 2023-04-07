@@ -81,6 +81,21 @@ a:active {
 	text-decoration: underline;
 }
 
+a.no-style:link,
+a.no-style:visited,
+a.no-style:hover,
+a.no-style:active {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+a.no-color:link,
+a.no-color:visited,
+a.no-color:hover,
+a.no-color:active {
+	color: var(--text-color);
+}
+
 h1,
 h2,
 h3,

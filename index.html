@@ -9,7 +9,7 @@
 		.home-title {
 			font-size: 52px;
 			text-align: center;
-      margin: 24px 0 48px;
+			margin: 24px 0 48px;
 		}
 
 		.home-subtitle {
@@ -25,31 +25,31 @@
 		.social-media-list .svg-icon {
 			width: 48px;
 			height: 48px;
-      margin-bottom: 24px;
+			margin-bottom: 24px;
 		}
 
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-column-gap: 32px;
-    }
+		.projects-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-column-gap: 32px;
+		}
 
-    .showcase-item {
-      transition: transform 0.2s;
-    }
+		.showcase-item {
+			transition: transform 0.2s;
+		}
 
-    .showcase-item:hover {
-      transform: scale(1.05);
-    }
+		.showcase-item:hover {
+			transform: scale(1.05);
+		}
 
-    .more-projects {
-      display: inline-block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto; 
-      text-align: center;
-      font-size: 28px;
-    }
+		.more-projects {
+			display: inline-block;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-size: 28px;
+		}
 	</style>
 
 	<body>
@@ -60,21 +60,19 @@
 			<p class="home-description">{{ site.description-formatted }}</p>
 			<div class="social-links">{%- include social.html -%}</div>
 			<h2 class="home-subtitle">Stuff I made</h2>
-      	<div class="projects-container">
-        {% for project in site.data.projects %}
-          {% if project.show_in_home %}
-            <div class="showcase-item">
-              <a href="{{ project.url }}">
-                <img src="{{ project.image }}" alt="" />
-                <div class="overlay"></div>
-                <h1>{{ project.title }}</h1>
-              </a>
-              <p>{{ project.description }}</p>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <a href="/projects" class="more-projects">See all</a>
+			<div class="projects-container">
+				{% for project in site.data.projects %} {% if project.show_in_home %}
+				<div class="showcase-item">
+					<a href="{{ project.url }}">
+						<img src="{{ project.image }}" alt="" />
+						<div class="overlay"></div>
+						<h1>{{ project.title }}</h1>
+					</a>
+					<p>{{ project.description }}</p>
+				</div>
+				{% endif %} {% endfor %}
+			</div>
+			<a href="/projects" class="more-projects no-color">See all</a>
 		</main>
 	</body>
 </html>
