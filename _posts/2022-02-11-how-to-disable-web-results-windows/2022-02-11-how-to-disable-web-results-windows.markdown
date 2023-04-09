@@ -4,7 +4,7 @@ title: How to disable web search results in the start menu
 tags: ["tutorial"]
 ---
 
-# Windows 10 & Windows 11
+## Windows 10 & Windows 11
 
 1. Windows + R, type `regedit` and hit enter. Accept the UAC prompt that shows up.
 2. Navigate to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\`.
