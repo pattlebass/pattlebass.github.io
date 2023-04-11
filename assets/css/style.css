@@ -354,7 +354,7 @@ footer {
 	}
 	.navbar-links li {
 		text-align: center;
-		padding: 8px;
+		padding: 14px 16px;
 	}
 	.navbar-links.active {
 		display: flex;
