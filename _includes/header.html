@@ -1,8 +1,8 @@
 <header>
-	<nav class="navbar">
+	<nav class="navbar" role="navigation" aria-label="Main menu">
 		<a href="{{ '/' | relative_url }}" class="logo">{{ site.title | escape }}</a>
-		<button class="toggle-button" onclick="toggleNav()">
-			<svg class="svg-icon" viewBox="0 0 16 16">
+		<button class="toggle-button" onclick="toggleNav()" aria-expanded="false" aria-label="Open the menu">
+			<svg aria-hidden="true" focusable="false" class="svg-icon" viewBox="0 0 16 16">
 				<use xlink:href="{{ '/assets/icons.svg#hamburger' | relative_url }}"></use>
 			</svg>
 		</button>
