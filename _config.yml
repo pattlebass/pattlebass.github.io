@@ -24,7 +24,7 @@ description: >-
 description-formatted: >-
   "developer" - I make apps, mods and sometimes games.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pattlebass.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /posts/:categories/:title
 host: 0.0.0.0
