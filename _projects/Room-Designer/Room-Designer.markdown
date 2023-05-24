@@ -20,7 +20,7 @@ carousels:
 <style>
   .play-container {
     margin: 32px auto;
-    width: 36ch;
+    max-width: 36ch;
     background-color: var(--main-color);
     border-radius: 16px;
   }
@@ -48,11 +48,12 @@ Whether you want to change the color of your walls, add some furniture, or chang
 
 ## Intuitive interface
 
-![A screenshot showcasing the user interface](/assets/images/room-designer/Screenshot 2023-05-24 133124.webp){: style="float: right; width: 400px"}
-The user interface is designed with a simple rule in mind: actions should not take more than ~3 clicks.
-This ensures that the UI remains easy to use, even for first-time users: functional, but not cluttered.
+![A screenshot showcasing the user interface](/assets/images/room-designer/Screenshot 2023-05-24 133124.webp)
 
-The features added also rely on this principle. Anything that is too hard to do in a few clicks is also out of this project's scope.
+The user interface is designed with a simple rule in mind: actions should not take more than ~3 clicks.
+This ensures that the UI remains easy to use, even for first-time users. It is functional, but not cluttered.
+
+The features added also rely on this principle. Anything that is too hard to do in a few clicks is out of this project's scope.
 
 ## Suggestions
 
