@@ -19,19 +19,21 @@
 		<main>
 			<article>
 				<h1 class="title">{{ page.title }}</h1>
-				<div class="github-container">
-					<a href="{{ page.github }}" class="github-button no-color">View on Github
-						<svg
-							class="svg-icon"
-							viewBox="0 0 16 16"
-							alignment-baseline="text-before-edge"
-						>
-							<use
-								xlink:href="{{ '/assets/icons.svg#github' | relative_url }}"
-							></use>
-						</svg>
-					</a>
-				</div>
+				{% if page.github %}
+					<div class="github-container">
+						<a href="{{ page.github }}" class="github-button no-color">View on Github
+							<svg
+								class="svg-icon"
+								viewBox="0 0 16 16"
+								alignment-baseline="text-before-edge"
+							>
+								<use
+									xlink:href="{{ '/assets/icons.svg#github' | relative_url }}"
+								></use>
+							</svg>
+						</a>
+					</div>
+				{% endif %}
 				{{content}}
 			</article>
 		</main>
