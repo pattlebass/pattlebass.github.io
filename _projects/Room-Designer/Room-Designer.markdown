@@ -33,7 +33,7 @@ carousels:
 {% include carousel.html height="56" unit="%" duration="7" number="1" %}
 
 <div class="play-container">
-  <a href="https://itch.io/embed-upload/7840991?color=333333" class="github-button no-color">
+  <a href="https://itch.io/embed-upload/7977230?color=333333" class="github-button no-color">
     <svg class="svg-icon" viewBox="0 0 16 16" alignment-baseline="text-before-edge">
       <use xlink:href="{{ '/assets/icons.svg#open' | relative_url }}"></use>
     </svg>
