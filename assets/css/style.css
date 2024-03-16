@@ -1,6 +1,6 @@
 :root {
 	color-scheme: dark;
-	--main-color: #202326;
+	--main-color: #131515;
 	--secondary-color: rgb(37, 40, 43);
 	--text-color: rgba(255, 255, 255, 0.9);
 	--text-color-faded: rgba(255, 255, 255, 0.5);
@@ -34,8 +34,9 @@ body {
 
 main {
 	background-color: var(--secondary-color);
-	margin: 6rem auto;
-	padding: 32px;
+	box-shadow: 0px 0px 33px -11px rgba(0, 0, 0, 0.75);
+	margin: 96px auto;
+	padding: 64px;
 	max-width: 1100px;
 	border-radius: 16px;
 }
@@ -64,6 +65,10 @@ article {
 	text-align: center;
 	margin: 32px 0 16px;
 	padding: 0;
+}
+
+.page-heading {
+	margin: 0;
 }
 
 code.language-plaintext {
@@ -126,7 +131,7 @@ h6 {
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 52px;
 }
 
 h2 {
@@ -180,7 +185,7 @@ table th {
 
 header {
 	background-color: var(--secondary-color);
-	box-shadow: 0px 1px 5px 0px #000000bf;
+	box-shadow: 0px 0px 5px 0px #000000bf;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -240,6 +245,7 @@ header .icon {
 
 footer {
 	background-color: var(--secondary-color);
+	box-shadow: 0px 0px 33px -11px rgba(0, 0, 0, 0.75);
 	width: 100%;
 	padding: 8px 0;
 }
@@ -276,6 +282,21 @@ footer {
 	fill: gray;
 }
 
+.showcase-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	column-gap: 32px;
+	row-gap: 32px;
+}
+
+.showcase-item {
+	transition: transform 0.2s;
+}
+
+.showcase-item:hover {
+	transform: scale(1.05);
+}
+
 .showcase-item a {
 	position: relative;
 	display: block;
@@ -288,7 +309,7 @@ footer {
 	bottom: 6px;
 	left: 12px;
 	margin: 0;
-	text-shadow: 2px 2px 0 black;
+	text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
 	pointer-events: none;
 }
 

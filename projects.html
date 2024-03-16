@@ -5,30 +5,23 @@ permalink: /projects/
 ---
 
 <style>
-	.projects-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-column-gap: 16px;
-		grid-row-gap: 16px;
-	}
-
-	.project-category {
-		margin-bottom: 32px;
+	.showcase-container {
+		margin: 64px 0;
 	}
 </style>
 
 <div class="project-category">
-	<h1>Projects</h1>
-	<div class="projects-container">
+	<h1 class="page-heading">Projects</h1>
+	<div class="showcase-container">
 		{% for project in site.data.projects %}
-			<div class="showcase-item">
-				<a href="{{ project.url }}">
-					<img src="{{ project.image }}" alt="" />
-					<div class="overlay"></div>
-					<h1>{{ project.title }}</h1>
-				</a>
-				<p>{{ project.description }}</p>
-			</div>
+		<div class="showcase-item">
+			<a href="{{ project.url }}">
+				<img src="{{ project.image }}" alt="" />
+				<div class="overlay"></div>
+				<h1>{{ project.title }}</h1>
+			</a>
+			<p>{{ project.description }}</p>
+		</div>
 		{% endfor %}
 	</div>
 </div>

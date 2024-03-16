@@ -28,20 +28,6 @@
 			margin-bottom: 24px;
 		}
 
-		.projects-container {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			grid-column-gap: 32px;
-		}
-
-		.showcase-item {
-			transition: transform 0.2s;
-		}
-
-		.showcase-item:hover {
-			transform: scale(1.05);
-		}
-
 		.more-projects {
 			display: inline-block;
 			width: 100%;
@@ -60,7 +46,7 @@
 			<p class="home-description">{{ site.description-formatted }}</p>
 			<div class="social-links">{%- include social.html -%}</div>
 			<h2 class="home-subtitle">Stuff I made</h2>
-			<div class="projects-container">
+			<div class="showcase-container">
 				{% for project in site.data.projects %} {% if project.show_in_home %}
 				<div class="showcase-item">
 					<a href="{{ project.url }}">
