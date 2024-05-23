@@ -3,7 +3,7 @@ layout: project
 title: Room Designer
 description: Room Designer is an app that aims to simplify the process of designing and decorating your home
 permalink: /Room-Designer/
-image: /assets/images/room-designer/Screenshot 2023-05-24 133112.webp
+image: /assets/images/room-designer/1.jpg
 custom_colors:
   main: "#28281c"
   secondary: "#48482d"
@@ -11,10 +11,10 @@ custom_colors:
 
 carousels:
   - images:
-      - image: /assets/images/room-designer/Screenshot 2023-05-24 133112.webp
-      - image: /assets/images/room-designer/Screenshot 2023-05-24 191706.webp
-      - image: /assets/images/room-designer/Screenshot 2023-05-24 132921.webp
-      - image: /assets/images/room-designer/Screenshot 2023-05-24 133124.webp
+      - image: /assets/images/room-designer/1.jpg
+      - image: /assets/images/room-designer/2.jpg
+      - image: /assets/images/room-designer/3.jpg
+      - image: /assets/images/room-designer/4.jpg
 ---
 
 <style>
@@ -33,7 +33,7 @@ carousels:
 {% include carousel.html height="56" unit="%" duration="7" number="1" %}
 
 <div class="play-container">
-  <a href="https://itch.io/embed-upload/7977230?color=333333" class="github-button no-color">
+  <a href="https://itch.io/embed-upload/10494890?color=333333" class="github-button no-color">
     <svg class="svg-icon" viewBox="0 0 16 16" alignment-baseline="text-before-edge">
       <use xlink:href="{{ '/assets/icons.svg#open' | relative_url }}"></use>
     </svg>
