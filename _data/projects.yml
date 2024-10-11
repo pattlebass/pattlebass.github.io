@@ -10,6 +10,12 @@
   image: /assets/images/room-designer/1.jpg
   show_in_home: true
 
+- title: Keyboard Keyboard
+  description: A musical web toy. Use your numpad or number row keys to play your favorite songs right in the browser
+  url: https://pattlebass.github.io/keyboard-keyboard
+  image: /assets/images/kb-kb.webp
+  show_in_home: true
+
 - title: One At A Time
   description: A Minecraft server-side mod that allows only a single person to play, while the rest spectate
   url: https://github.com/pattlebass/OneAtATime
@@ -17,7 +23,7 @@
   show_in_home: true
 
 - title: Godot Acrylic
-  description: An effect similar to Microsoft's Acrylic material achieved in the Godot Engine.
+  description: An effect similar to Microsoft's Acrylic material achieved in the Godot Engine
   url: https://github.com/pattlebass/Godot-Acrylic
   image: /assets/images/godot-acrylic.jpg
   show_in_home: true
