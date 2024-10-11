@@ -16,6 +16,12 @@
   image: /assets/images/kb-kb.webp
   show_in_home: true
 
+- title: light_box
+  description: A short puzzle game about lasers. Awarded 3rd place at the IGU Summer Jam 2024
+  url: https://pattlebass.itch.io/light-box
+  image: /assets/images/light-box.png
+  show_in_home: true
+
 - title: One At A Time
   description: A Minecraft server-side mod that allows only a single person to play, while the rest spectate
   url: https://github.com/pattlebass/OneAtATime
