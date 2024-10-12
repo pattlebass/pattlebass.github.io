@@ -20,9 +20,9 @@
 
 title: pattle_bass
 description: >-
-  "developer" - I make apps, mods and sometimes games.
+  "developer" - I make apps, games and sometimes mods.
 description-formatted: >-
-  "developer" - I make apps, mods and sometimes games.
+  "developer" - I make apps, games and sometimes mods.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pattlebass.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
