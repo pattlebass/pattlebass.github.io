@@ -1,0 +1,20 @@
+.title {
+	margin: 16px;
+}
+
+.github-button {
+	display: inline-block;
+	padding: 8px;
+	fill: var(--text-color);
+	border-radius: 8px;
+}
+
+.github-button svg {
+	display: inline-block;
+	vertical-align: middle;
+	fill: inherit;
+}
+
+.github-container {
+	text-align: right;
+}
