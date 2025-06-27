@@ -22,10 +22,10 @@
   image: /assets/images/light-box.png
   show_in_home: true
 
-- title: One At A Time
-  description: A Minecraft server-side mod that allows only a single person to play, while the rest spectate
-  url: https://github.com/pattlebass/OneAtATime
-  image: /assets/images/one-at-a-time.jpg
+- title: Vanilla Display
+  description: A proof-of-concept server-side mod that uses Text Display entities to show images, videos, and dynamic sources to vanilla clients
+  url: https://modrinth.com/mod/vanilla-display
+  image: /assets/images/vanilla-display.jpg
   show_in_home: true
 
 - title: Godot Acrylic
