@@ -49,6 +49,8 @@ minima:
   social_links:
     twitter: pattlebass_dev
     github: pattlebass
+    bluesky: pattlebass.bsky.social
+    kofi: fabians
 
 # Build settings
 #theme: jekyll-blog-theme

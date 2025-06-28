@@ -278,6 +278,14 @@ footer {
 	fill: #55acee;
 }
 
+.bluesky:hover {
+	fill: #1185fe;
+}
+
+.kofi:hover {
+	fill: #ff5a16;
+}
+
 .github:hover {
 	fill: gray;
 }
