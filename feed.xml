@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://pattlebass.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pattlebass.github.io/" rel="alternate" type="text/html" /><updated>2025-06-29T11:43:12+00:00</updated><id>https://pattlebass.github.io/feed.xml</id><title type="html">pattle_bass</title><subtitle>&quot;developer&quot; - I make tools, games, mods (and sometimes even release them!)</subtitle><entry><title type="html">How to disable web search results in the start menu</title><link href="https://pattlebass.github.io/posts/how-to-disable-web-results-windows" rel="alternate" type="text/html" title="How to disable web search results in the start menu" /><published>2022-02-11T00:00:00+00:00</published><updated>2022-02-11T00:00:00+00:00</updated><id>https://pattlebass.github.io/posts/how-to-disable-web-results-windows</id><content type="html" xml:base="https://pattlebass.github.io/posts/how-to-disable-web-results-windows"><![CDATA[<h2 id="windows-10--windows-11">Windows 10 &amp; Windows 11</h2>
+
+<ol>
+  <li>Windows + R, type <code class="language-plaintext highlighter-rouge">regedit</code> and hit enter. Accept the UAC prompt that shows up.</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.</li>
+  <li>
+    <p>If there is no key named <code class="language-plaintext highlighter-rouge">Explorer</code> right-click and create one.</p>
+
+    <p><img src="disable-internet-results-search-bar-1.webp" alt="alt text" width="881px" height="650px" /></p>
+  </li>
+  <li>Right-click to add a new <code class="language-plaintext highlighter-rouge">DWORD value</code> named <code class="language-plaintext highlighter-rouge">DisableSearchBoxSuggestions</code>.</li>
+  <li>
+    <p>Double-click it and set its value data to <code class="language-plaintext highlighter-rouge">1</code>.</p>
+
+    <p><img src="disable-internet-results-search-bar-2.webp" alt="alt text" width="360px" height="220px" /></p>
+  </li>
+  <li>Open the Task Manager and restart <code class="language-plaintext highlighter-rouge">Windows Explorer</code>.</li>
+</ol>]]></content><author><name></name></author><category term="tutorial" /><summary type="html"><![CDATA[Windows 10 &amp; Windows 11]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://pattlebass.github.io/default" /><media:content medium="image" url="https://pattlebass.github.io/default" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

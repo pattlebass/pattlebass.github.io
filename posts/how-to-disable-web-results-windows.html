@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How to disable web search results in the start menu | pattle_bass</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="How to disable web search results in the start menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Windows 10 &amp; Windows 11" />
+<meta property="og:description" content="Windows 10 &amp; Windows 11" />
+<link rel="canonical" href="https://pattlebass.github.io/posts/how-to-disable-web-results-windows" />
+<meta property="og:url" content="https://pattlebass.github.io/posts/how-to-disable-web-results-windows" />
+<meta property="og:site_name" content="pattle_bass" />
+<meta property="og:image" content="https://pattlebass.github.io/default" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://pattlebass.github.io/default" />
+<meta property="twitter:title" content="How to disable web search results in the start menu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-11T00:00:00+00:00","datePublished":"2022-02-11T00:00:00+00:00","description":"Windows 10 &amp; Windows 11","headline":"How to disable web search results in the start menu","image":"https://pattlebass.github.io/default","mainEntityOfPage":{"@type":"WebPage","@id":"https://pattlebass.github.io/posts/how-to-disable-web-results-windows"},"url":"https://pattlebass.github.io/posts/how-to-disable-web-results-windows"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css" />
+	<style>
+		@font-face {
+			font-family: "Roboto";
+			src: url("/assets/fonts/Roboto.woff2") format("woff2");
+			font-display: swap;
+		}
+	</style><link type="application/atom+xml" rel="alternate" href="https://pattlebass.github.io/feed.xml" title="pattle_bass" /><!-- goat counter -->
+	
+	<script
+		data-goatcounter="https://pattlebass.goatcounter.com/count"
+		async
+		src="//gc.zgo.at/count.js"
+	></script>
+	
+	<script defer src="/assets/js/navigation.js"></script>
+</head>
+<link rel="stylesheet" href="/assets/css/gdscript.css" />
+	<body><header>
+	<nav class="navbar" role="navigation" aria-label="Main menu">
+		<a href="/" class="logo">pattle_bass</a>
+		<button class="toggle-button" onclick="toggleNav()" aria-expanded="false" aria-label="Open the menu">
+			<svg aria-hidden="true" focusable="false" class="svg-icon" viewBox="0 0 16 16">
+				<use xlink:href="/assets/icons.svg#hamburger"></use>
+			</svg>
+		</button>
+		<ul class="navbar-links">
+			
+				<li><a href="/projects/">Projects</a></li>
+			
+				<li><a href="/posts/">Posts</a></li>
+			
+		</ul>
+	</nav>
+</header>
+<main>
+				<article>
+					<div class="article-info">
+						<h1 class="title">How to disable web search results in the start menu</h1>
+						<div class="article-metadata">
+							<time datetime='2022-02-11' class="meta-date">11 February 2022</time>
+						</div>
+					</div>
+					<h2 id="windows-10--windows-11">Windows 10 &amp; Windows 11</h2>
+
+<ol>
+  <li>Windows + R, type <code class="language-plaintext highlighter-rouge">regedit</code> and hit enter. Accept the UAC prompt that shows up.</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\</code>.</li>
+  <li>
+    <p>If there is no key named <code class="language-plaintext highlighter-rouge">Explorer</code> right-click and create one.</p>
+
+    <p><img src="disable-internet-results-search-bar-1.webp" alt="alt text" width="881px" height="650px" /></p>
+  </li>
+  <li>Right-click to add a new <code class="language-plaintext highlighter-rouge">DWORD value</code> named <code class="language-plaintext highlighter-rouge">DisableSearchBoxSuggestions</code>.</li>
+  <li>
+    <p>Double-click it and set its value data to <code class="language-plaintext highlighter-rouge">1</code>.</p>
+
+    <p><img src="disable-internet-results-search-bar-2.webp" alt="alt text" width="360px" height="220px" /></p>
+  </li>
+  <li>Open the Task Manager and restart <code class="language-plaintext highlighter-rouge">Windows Explorer</code>.</li>
+</ol>
+
+				</article>
+			</main><footer>
+	<div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/pattlebass" target="_blank" title="pattlebass"><svg class="svg-icon github" viewBox="0 0 16 16"><use xlink:href="/assets/icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://bsky.app/profile/pattlebass.bsky.social" target="_blank" title="pattlebass.bsky.social"><svg class="svg-icon bluesky" viewBox="0 0 16 16"><use xlink:href="/assets/icons.svg#bluesky"></use></svg></a></li><li><a rel="me" href="https://twitter.com/pattlebass_dev" target="_blank" title="pattlebass_dev"><svg class="svg-icon twitter" viewBox="0 0 16 16"><use xlink:href="/assets/icons.svg#twitter"></use></svg></a></li><li><a rel="me" href="https://ko-fi.com/fabians" target="_blank" title="fabians"><svg class="svg-icon kofi" viewBox="0 0 16 16"><use xlink:href="/assets/icons.svg#kofi"></use></svg></a></li></ul></div>
+</footer>
+</body>
+</html>
