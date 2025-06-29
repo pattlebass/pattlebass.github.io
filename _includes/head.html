@@ -12,18 +12,13 @@
 		}
 	</style>
 	{%- feed_meta -%}
+	<!-- goat counter -->
 	{% if jekyll.environment == "production" %}
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLTJLVJKWJ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-
-		gtag("config", "G-TLTJLVJKWJ");
-	</script>
+	<script
+		data-goatcounter="https://pattlebass.goatcounter.com/count"
+		async
+		src="//gc.zgo.at/count.js"
+	></script>
 	{% endif %}
 	<script defer src="/assets/js/navigation.js"></script>
 </head>
